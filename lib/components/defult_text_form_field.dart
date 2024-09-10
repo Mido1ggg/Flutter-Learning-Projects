@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:list_view_proj/views/first_screen.dart'
 
 TextFormField buildTextFormField(
     {required TextEditingController controller,
@@ -15,8 +14,9 @@ TextFormField buildTextFormField(
       keyboardType: keyboardType,
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
+        hintStyle: const TextStyle(fontSize: 14,color: Color(0xFF868686)),
         hintText: labelText,
         border: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(30))),
+            borderRadius: BorderRadius.all(Radius.circular(10))),
       ));
 }
